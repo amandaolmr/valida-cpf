@@ -21,7 +21,7 @@ public class Swagger {
         return new Docket(DocumentationType.SWAGGER_2)
                 .enable(true)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("br.com.validacpf")).paths(PathSelectors.regex("/.*"))
+                .apis(RequestHandlerSelectors.basePackage("br.com.validaCpf")).paths(PathSelectors.regex("/.*"))
                 .build().apiInfo(metaInfo());
     }
 
